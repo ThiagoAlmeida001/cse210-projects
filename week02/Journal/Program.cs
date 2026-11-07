@@ -30,7 +30,7 @@ class Program
             if (opt == 1)
             {
                 Entry newEntry = new Entry();
-                newEntry.display();
+                newEntry.Display();
 
                 myJournal.AddEntry(newEntry);
             }

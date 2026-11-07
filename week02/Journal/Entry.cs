@@ -9,9 +9,9 @@ public class Entry
     public string _mood;
     public string _weather;
 
-    Prompts prompts1 = new Prompts();
+    Prompts _prompts1 = new Prompts();
 
-    public void display()
+    public void Display()
     {
         DateTime theCurrentTime = DateTime.Now;
         _date = theCurrentTime.ToShortDateString();
@@ -22,7 +22,7 @@ public class Entry
         Console.WriteLine("On a scale of 1-5, how is your mood today?");
         _mood = Console.ReadLine();
 
-        _promptText = prompts1.display();
+        _promptText = _prompts1.Display();
 
         _entryText = Console.ReadLine();
 

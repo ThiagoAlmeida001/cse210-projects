@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Prompts
 {
-    Random random = new Random();
+    Random _random = new Random();
     public List<string> _prompts = new List<string>()
     {
         "What was the most unexpected sound you heard today, and what caused it?",
@@ -19,9 +19,9 @@ public class Prompts
         "If you could replay one single minute of your day today, which minute would you choose?"
     };
 
-    public string display()
+    public string Display()
     {
-        int i = random.Next(0, _prompts.Count);
+        int i = _random.Next(0, _prompts.Count);
 
         string dailyPrompt = _prompts[i];
 
