@@ -7,9 +7,9 @@ public class Scripture
    private Reference _reference;
    private List<Word> _words;
 
-   public Scripture(Reference Reference, string text)
+   public Scripture(Reference reference, string text)
     {
-        _reference = Reference;
+        _reference = reference;
         _words = new List<Word>();
 
         string[] splitWords = text.Split(' ');
